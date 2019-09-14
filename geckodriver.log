@@ -341,8 +341,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309762019	Marionette	INFO	Listening on port 61944
+[Parent 18552, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+on port 61944
 1568309762224	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.error: BroadcastService: 
   receivedBroadcastMessage: handler for
@@ -452,8 +452,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309804285	Marionette	INFO	Listening on port 62642
+[Parent 22124, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+on port 62642
 1568309804715	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
@@ -637,8 +637,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309866055	Marionette	INFO	Listening on port 64198
+[Parent 28576, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+on port 64198
 1568309866395	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
@@ -709,7 +709,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+ots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 1568309888311	Marionette	INFO	Listening on port 64869
 1568309888613	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
@@ -733,8 +734,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309895473	Marionette	INFO	Listening on port 65083
+[Parent 21992, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+on port 65083
 1568309895713	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
@@ -781,8 +782,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309911780	Marionette	INFO	Listening on port 65517
+[Parent 32424, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+on port 65517
 1568309911836	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.error: BroadcastService: 
   receivedBroadcastMessage: handler for
@@ -800,7 +801,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+ots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 1568309946184	Marionette	INFO	Listening on port 49569
 1568309946534	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
@@ -824,16 +826,22 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309988240	Marionette	INFO	Listening on port 49973
-1568309988335	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
-JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
-* Can't use WebGL in headless mode (https://bugzil.la/1375585).
-JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/swc216dff652bcb92b0d3d2bdf7d8fc8fd.js, line 850: unreachable code after return statement
-JavaScript error: https://static-olxeu.akamaized.net/static/olxpl/packed/swc216dff652bcb92b0d3d2bdf7d8fc8fd.js, line 2: TypeError: dat.value is undefined
-console.error: BroadcastService: 
-  receivedBroadcastMessage: handler for
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0074,name=PBrowser::Msg_StopIMEStateManagement) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1E00A0,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1E008F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 27160, Gecko_IOThread] WARNING: file z:/task_1563383129/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[Parent 27160, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 27160, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 31828, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3181568314067887	Marionette	INFO	Stopped listening on port 49569
+stMessage: handler for
   remote-settings/monitor_changes
   threw error:
   Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221568303536502%22 is not a valid URL..
@@ -848,8 +856,8 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
-ARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568309996238	Marionette	INFO	Listening on port 50260
+[Parent 14212, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+on port 50260
 1568309996391	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/sw979a1857e226d08d265b1ea670beccd3.js, line 118: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
