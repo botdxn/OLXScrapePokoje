@@ -1,12 +1,10 @@
-import bs4, requestModule, csv, smtplib
+import bs4, requestModule
 
-URL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/wroclaw/'
-PRICE_MATCH = 700
-
-def scrapeAll(URL):
-    soupParser = bs4.BeautifulSoup(requestModule.requestSite(URL).text, 'html.parser')
+def scrapeAll():
+    soupParser = bs4.BeautifulSoup(requestModule.requestSites().text, 'html.parser')
     ogloszenia = soupParser.find_all('table', {'summary': 'Ogłoszenie'})
-    with open('data.txt', 'a', encoding="UTF-8") as file:
+
+    with open('data.txt', 'w+', encoding="UTF-8") as file:
         for ogloszenie in ogloszenia:
             cena = ogloszenie.find('p', {'price'}).text
             cena = cena.replace(" ", "")
@@ -19,9 +17,7 @@ def scrapeAll(URL):
             link = ogloszenie.find('a', {'marginright5'})['href']
             link = link.replace("\t", "").replace("\r", "").replace("\n", "")
 
-            dataid = ogloszenie['data-id']
-            dataid = dataid.replace("\t", "").replace("\r", "").replace("\n", "")
+            file.write(tytul+'%'+cena+'%'+link+'\n')
 
-            file.write(tytul+'%'+cena+'%'+link+'%'+dataid+'\n')
-        #if int(cena) <= PRICE_MATCH:
-            #print(str(tytul), str(cena), str(link), dataid)
+
+scrapeAll()
