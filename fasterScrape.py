@@ -1,8 +1,9 @@
 import bs4, requests, time, threading, concurrent.futures, re, os
 from datetime import datetime
 
-pageNum = 5
-baseURL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/wroclaw/?page='
+pageNum = 20
+baseURL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/?page='
+#baseURL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/wroclaw/?page='
 URLList = []
 
 def scrapeAll():
@@ -50,15 +51,45 @@ def requestSingle(link):
             cena = cena.replace("zł", "")
             cena = cena.replace("\t", "").replace("\r", "").replace("\n", "")
 
+            lokalizacja = soupParser.find('a', {'class': 'show-map-link'}).text
+            lokalizacja = lokalizacja.replace("\t", "").replace("\r", "").replace("\n", "")
+            lokalizacja = lokalizacja.split()
+            lokalizacja = lokalizacja[0]
+
             tytul = soupParser.find('div', {'class': 'offer-titlebox'})
             tytul = tytul.find('h1').text
             tytul = str(tytul.replace("\t", "").replace("\r", "").replace("\n", ""))
             tytul = tytul.strip()
 
+            metraz = soupParser.find('div', {'class': 'clr lheight20 large'}).text
+            metraz = str(metraz.replace("\t", "").replace("\r", "").replace("\n", ""))
+            r1 = re.findall(r"^\d{1,2}m2|\d{1,2}m\s2|\d{1,2}m\^2|\d{1,2}\sm\^2|\d{1,2}mkw|\d{1,2}dm\skw|\d{1,2}m|\d{1,2}\sm$", metraz)
+            #print(f'\n==={r1}===\n')
+            metrazDokladny = 0
+            for element in r1:
+                try:
+                    element = element.replace("m2", "")
+                    element = element.replace("m 2", "")
+                    element = element.replace("m^2", "")
+                    element = element.replace("m ^2", "")
+                    element = element.replace("mkw", "")
+                    element = element.replace("m kw", "")
+                    element = element.replace("m", "")
 
-            file.write(tytul+'%'+cena+'%'+link+'%'+str(typPokoju)+'\n')
+                    if int(element) < 25 and int(element) > 6:
+                        #print(element[0])
+                        metrazDokladny = element
+                    else:
+                        metrazDokladny = 'Brak danych'
+
+                except ValueError:
+                    pass
+
+
+
+
+            file.write(tytul+'%'+cena+'%'+link+'%'+metrazDokladny+'%'+str(typPokoju)+'%'+str(lokalizacja)+'\n')
             file.close()
-            os.system('cls')
         except:
             pass
 
