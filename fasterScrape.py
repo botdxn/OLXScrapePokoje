@@ -1,6 +1,6 @@
 import bs4, requests, smtplib, time
 
-pageNum = 100
+pageNum = 10
 baseURL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/wroclaw/?page='
 
 def scrapeAll():
