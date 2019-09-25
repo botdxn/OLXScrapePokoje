@@ -1,7 +1,7 @@
 import bs4, requests, time, threading, concurrent.futures, re, os
 from datetime import datetime
 
-pageNum = 20
+pageNum = 440
 baseURL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/?page='
 #baseURL = 'https://www.olx.pl/nieruchomosci/stancje-pokoje/wroclaw/?page='
 URLList = []
@@ -31,6 +31,7 @@ def requestSingle(link):
     now = datetime.now()
     dt_string = now.strftime("%d-%m-%Y")
     filename = 'data_' + str(dt_string) + '_' + str(pageNum) + '.txt'
+
     with open(filename, 'a', encoding="UTF-8") as file:
         try:
             typPokoju = ''
@@ -84,9 +85,6 @@ def requestSingle(link):
 
                 except ValueError:
                     pass
-
-
-
 
             file.write(tytul+'%'+cena+'%'+link+'%'+metrazDokladny+'%'+str(typPokoju)+'%'+str(lokalizacja)+'\n')
             file.close()
