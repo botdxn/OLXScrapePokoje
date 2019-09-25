@@ -9,3 +9,8 @@ Dla komputera z procesorem Ryzen 5 1600 prędkość wykonania skryptu dla pageNu
 
 # Wykorzystane moduły
 Z modułów, które nie są automatycznie dołączane do instalacji Pythona to jedynie BeautifulSoup i concurrent.futures
+
+# To do
+- Zaimplementować wielowątkowość podczas wstępnego cache'owania linków
+- Analiza poprzez pandas (zamiast używania Excela)
+...
