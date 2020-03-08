@@ -13,4 +13,4 @@ Z modułów, które nie są automatycznie dołączane do instalacji Pythona to j
 # To do
 - Zaimplementować wielowątkowość podczas wstępnego cache'owania linków
 - Analiza poprzez pandas (zamiast używania Excela)
-...
+- Stworzyć frontend (np. Flask lub Django) do scrape'owania i wyświetlania wykresów dla podanej lokalizacji (np. Legnica, Wrocław, Poznań itd)
